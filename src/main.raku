@@ -1,5 +1,5 @@
 my $project_root_dir = $?FILE.IO.parent.dirname;
-my $dist_dir = "$project_root_dir/dist";
+my $dist_dir = "$project_root_dir/docs";
 
 my $content_dir = "$project_root_dir/content";
 my $static_dir_src = "$content_dir/static";
