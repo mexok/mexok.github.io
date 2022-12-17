@@ -15,7 +15,7 @@ import DOMPurify from 'dompurify'
 import { marked } from 'marked'
 import axios from 'axios'
 import { reactive } from 'vue'
-import { ArticleMetadata, ArticleMetadataDummy } from '../model'
+import { ArticleMetadataDummy } from '../model'
 
 const state = reactive({
     content: '',
