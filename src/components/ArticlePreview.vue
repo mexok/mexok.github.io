@@ -1,12 +1,14 @@
 <template>
+    <h2>test</h2>
     <div class="article">
-        <h2>{{ article.title }}</h2>
-        <div v-html="state.content" />
+        <h2>{{ title }}</h2>
+        <div v-html="state.preview" />
         <div>
             Author: {{ article.author }}
             <br>
             Date: {{ article.date }}
         </div>
+        <a :href="'/blog/' + article.content">Read</a>
     </div>
 </template>
 
@@ -15,17 +17,17 @@ import DOMPurify from 'dompurify'
 import { marked } from 'marked'
 import axios from 'axios'
 import { reactive, PropType } from 'vue'
-import { ArticleMetadata, ArticleMetadataDummy } from '../model'
+import ArticleMetadata from '@/model'
 
 const props = defineProps({
     article: Object as PropType<ArticleMetadata>
 })
 
 const state = reactive({
-    content: '',
+    preview: '',
 })
-axios.get(`/articles/${props.article.content}/content.md`)
+axios.get(`/articles/${props.article.content}/preview.md`)
     .then(function (response) {
-        state.content = DOMPurify.sanitize(marked.parse(response.data))
+        state.preview = DOMPurify.sanitize(marked.parse(response.data))
     })
 </script>
