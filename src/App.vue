@@ -4,8 +4,7 @@
             <RouterLink to="/">Home</RouterLink>
             <RouterLink to="/blog">Blog</RouterLink>
             <RouterLink to="/philosophy">Philosophy</RouterLink>
-            <RouterLink to="/contact">Contact</RouterLink>
-            <RouterLink to="/impressum">Impressum</RouterLink>
+            <RouterLink to="/imprint">Imprint</RouterLink>
         </nav>
     </header>
 

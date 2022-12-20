@@ -14,8 +14,6 @@
 
 <script lang=ts setup>
 
-import DOMPurify from 'dompurify'
-import { marked } from 'marked'
 import axios from 'axios'
 import { reactive } from 'vue'
 import { AllArticleMetadataDummy, getArticle } from '@/model'

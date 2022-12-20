@@ -20,14 +20,9 @@ const router = createRouter({
       component: () => import('@/views/Philosophy.vue')
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('@/views/Contact.vue')
-    },
-    {
-      path: '/impressum',
-      name: 'impressum',
-      component: () => import('@/views/Impressum.vue')
+      path: '/imprint',
+      name: 'imprint',
+      component: () => import('@/views/Imprint.vue')
     },
   ]
 })
