@@ -1,5 +1,6 @@
 <template>
     <h1> Imprint </h1>
+    <br>
     <table>
     <tr>
         <th><p>Name:</p></th>

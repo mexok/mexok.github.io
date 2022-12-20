@@ -19,32 +19,37 @@
 <style scoped>
 
 .view {
-    padding: 2rem
+    padding: 2rem;
+}
+
+RouterLink {
+    position: absolute;
+    transform: translateY(-50%);
 }
 
 nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 1rem;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+    color: var(--color-text);
 }
 
 nav a.router-link-exact-active:hover {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+    display: inline-block;
+    padding: 0 1rem;
+    border-left: 1px solid var(--color-border);
 }
 
 nav a:first-of-type {
-  border: 0;
+    border: 0;
 }
 
 </style>
