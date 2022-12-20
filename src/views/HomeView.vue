@@ -5,7 +5,7 @@
     <p>A blog for developers by developers. Feel free to look around.</p>
     <br>
     <h2>How to contribute & license</h2>
-    <p>This blog exists as a github repository under the GPL v2 license. Changes are welcomed as pull requests.</p>
+    <p>This blog exists as a <a href="https://github.com/mexok/mexok.github.io">github repository</a> under the GPL v2 license. Changes are welcomed as pull requests.</p>
     <p>All articles are peer-reviewed.</p>
     <br>
 </template>
