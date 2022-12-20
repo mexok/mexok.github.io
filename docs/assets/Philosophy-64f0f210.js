@@ -1,1 +1,0 @@
-import{_ as o,o as e,c as s,a as _}from"./index-d6a41242.js";const t={},c={class:"philosophy"},n=_("h1",null,"Our philosophy",-1),a=[n];function h(l,r){return e(),s("div",c,a)}const p=o(t,[["render",h]]);export{p as default};

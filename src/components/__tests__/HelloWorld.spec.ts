@@ -1,11 +1,12 @@
 import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils'
-import Header from '../Header.vue'
+import Article from '@/components/Article.vue'
+import { ArticleMetadataDummy } from '@/model'
 
 describe('HelloWorld', () => {
   it('renders properly', () => {
-    const wrapper = mount(Header, { props: { msg: 'Hello Vitest' } })
-    expect(wrapper.text()).toContain('Hello Vitest')
+    const wrapper = mount(Article, { props: { article: new ArticleMetadataDummy() } })
+    expect(wrapper.text()).toContain('Author')
   })
 })

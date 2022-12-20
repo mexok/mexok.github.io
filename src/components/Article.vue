@@ -1,11 +1,11 @@
 <template>
     <div class="article">
-        <h2>{{ article.title }}</h2>
+        <h2>{{ article?.title }}</h2>
         <div v-html="state.content" />
         <div>
-            Author: {{ article.author }}
+            Author: {{ article?.author }}
             <br>
-            Date: {{ article.date }}
+            Date: {{ article?.date }}
         </div>
     </div>
 </template>
@@ -14,8 +14,9 @@
 import DOMPurify from 'dompurify'
 import { marked } from 'marked'
 import axios from 'axios'
-import { reactive, PropType } from 'vue'
-import { ArticleMetadata, ArticleMetadataDummy } from '../model'
+import { reactive } from 'vue'
+import type { PropType } from 'vue'
+import type { ArticleMetadata } from '@/model'
 
 const props = defineProps({
     article: Object as PropType<ArticleMetadata>
@@ -24,7 +25,7 @@ const props = defineProps({
 const state = reactive({
     content: '',
 })
-axios.get(`/articles/${props.article.content}/content.md`)
+axios.get(`/articles/${props.article?.content}/content.md`)
     .then(function (response) {
         state.content = DOMPurify.sanitize(marked.parse(response.data))
     })

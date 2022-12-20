@@ -1,0 +1,17 @@
+{
+    "_comment": "We order articles in the order they should be displayed on blog site",
+    "articles": [
+        {
+            "title": "Second article",
+            "author": "Konstantin Merker",
+            "date": "2022-12-16",
+            "content": "0002_second_article"
+        },
+        {
+            "title": "First article",
+            "author": "Konstantin Merker",
+            "date": "2022-12-16",
+            "content": "0001_first_article"
+        }
+    ]
+}

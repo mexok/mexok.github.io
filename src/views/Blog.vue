@@ -8,7 +8,7 @@
         </div>
     </div>
     <div v-else>
-        <Article :article="getArticle(state.metadata.articles, $route.params.article)" />
+        <Article :article="getArticle(state.metadata.articles, $route.params.article as string)" />
     </div>
 </template>
 
