@@ -1,0 +1,9 @@
+{
+    "_comment": "We order authors in the order they should be displayed on authors site",
+    "authors": [
+        {
+            "author": "kmerker",
+            "name": "Konstantin Merker"
+        }
+    ]
+}

@@ -3,7 +3,7 @@
         <h2>{{ article?.title }}</h2>
         <div v-html="state.content" />
         <div>
-            Author: {{ article?.author }}
+            Author: <a :href="'/authors/' + article?.author">{{ article?.author }}</a>
             <br>
             Date: {{ article?.date }}
         </div>
@@ -16,7 +16,7 @@ import { marked } from 'marked'
 import axios from 'axios'
 import { reactive } from 'vue'
 import type { PropType } from 'vue'
-import type { ArticleMetadata } from '@/model'
+import type { ArticleMetadata } from '@/model/article'
 
 const props = defineProps({
     article: Object as PropType<ArticleMetadata>

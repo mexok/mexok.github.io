@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('@/views/Blog.vue')
     },
     {
+      path: '/authors/:author?',
+      name: 'authors',
+      component: () => import('@/views/Authors.vue')
+    },
+    {
       path: '/philosophy',
       name: 'philosophy',
       component: () => import('@/views/Philosophy.vue')

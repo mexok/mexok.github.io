@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils'
 import Article from '@/components/Article.vue'
-import { ArticleMetadataDummy } from '@/model'
+import { ArticleMetadataDummy } from '@/model/article'
 
 describe('HelloWorld', () => {
   it('renders properly', () => {

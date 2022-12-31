@@ -2,7 +2,6 @@ export interface AllArticleMetadata {
     articles: ArticleMetadata[]
 }
 
-
 export function getArticle(articles: ArticleMetadata[], name: string): ArticleMetadata | undefined {
     for (const i in articles) {
         if (articles[i].content === name) {

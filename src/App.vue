@@ -3,6 +3,7 @@
         <nav>
             <RouterLink to="/">Home</RouterLink>
             <RouterLink to="/blog">Blog</RouterLink>
+            <RouterLink to="/authors">Authors</RouterLink>
             <RouterLink to="/philosophy">Philosophy</RouterLink>
             <RouterLink to="/imprint">Imprint</RouterLink>
         </nav>
