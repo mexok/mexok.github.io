@@ -16,6 +16,16 @@
     </main>
 </template>
 
+<script setup lang="ts">
+
+import { MarkdownParserImpl } from '@/services/MarkdownParser'
+import { Service } from '@/services/ServiceEnum'
+import { provide } from 'vue'
+
+const parser = new MarkdownParserImpl()
+provide(Service.MarkdownParser, parser)
+
+</script>
 
 <style scoped>
 
