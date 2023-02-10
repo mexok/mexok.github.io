@@ -8,10 +8,10 @@
             "content": "0002_second_article"
         },
         {
-            "title": "First article",
+            "title": "Basics of ref",
             "author": "kmerker",
             "date": "2022-12-16",
-            "content": "0001_first_article"
+            "content": "0001_basics_of_refactoring"
         }
     ]
 }
