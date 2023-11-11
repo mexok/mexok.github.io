@@ -8,11 +8,11 @@
     </tr>
     <tr>
         <th><p>Address:</p></th>
-        <th><p>Nöthnitzer Str. 36</p></th>
+        <th><p>Weinböhlaer Str. 48</p></th>
     </tr>
     <tr>
         <th><p></p></th>
-        <th><p>01187 Dresden</p></th>
+        <th><p>01640 Coswig</p></th>
     </tr>
     <tr>
         <th><p></p></th>
@@ -20,7 +20,7 @@
     </tr>
     <tr>
         <th><p>E-Mail:</p></th>
-        <th><p>konstantin.coswig@gmail.com</p></th>
+        <th><p>konstantin@semerker.de</p></th>
     </tr>
     </table>
 </template>
